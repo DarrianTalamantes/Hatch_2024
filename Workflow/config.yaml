@@ -2,7 +2,7 @@
 #     Reference Genome
 # =================================================================================================
 
-genome: ../Data/Refrence/MTHFR_Gene.fasta
+genome: ../Data/Refrence/HomoSapien_Chr1.fasta
 idx: 
 
 

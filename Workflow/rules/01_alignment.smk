@@ -1,5 +1,5 @@
 # aligns the files to the genome
-rule bwa_map_prog:
+rule bwa_map:
     input:
         sample=samples_path + "{sample}fasta",
         genome=config["genome"],
@@ -16,7 +16,7 @@ rule bwa_map_prog:
 
 
 # Sorts the alignment file 
-rule samtools_sort_prog:
+rule samtools_sort:
     input:
         bams = mapped_reads + "{sample}.bam"   
     output:
